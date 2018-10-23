@@ -1,5 +1,7 @@
 package com.gc;
 
+import java.text.DecimalFormat;
+
 public class Circle {
 	private double radius;
 
@@ -30,8 +32,8 @@ public class Circle {
 	}
 
 	public String formatNumber(double x) { 						// Build Spec F
-//		DecimalFormat df = new DecimalFormat("#.00");
-		//df.format(x)
+		DecimalFormat df = new DecimalFormat("#.00");
+		df.format(x);
 		return String.format("%.2f", x);
 
 	}
